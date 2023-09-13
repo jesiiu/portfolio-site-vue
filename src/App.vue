@@ -1,9 +1,9 @@
 <script setup>
-import Header from './components/Header.vue';
-import About from './components/About.vue';
-import Nav from './components/Nav.vue';
-import Experience from './components/Experience.vue';
-import Portfolio from './components/Portfolio.vue';
+import Header from './components/Header.vue'
+import About from './components/About.vue'
+import Nav from './components/Nav.vue'
+import Experience from './components/Experience.vue'
+import Portfolio from './components/Portfolio.vue'
 </script>
 
 <template>
@@ -63,6 +63,15 @@ h5 {
   font-size: 1.2rem;
 }
 
+h5 {
+  color: $color-white;
+  text-align: center;
+}
+h2 {
+  color: $color-light;
+  text-align: center;
+}
+
 .container {
   margin: 0 auto;
   padding-bottom: 5rem;
@@ -101,14 +110,14 @@ img {
 }
 
 @media screen and (max-width: 1024px) {
-    .container {
-        width: $container-width-md;
-    }
+  .container {
+    width: $container-width-md;
+  }
 }
 
 @media screen and (max-width: 600px) {
-    .container {
-        width: $container-width-sm;
-    }
+  .container {
+    width: $container-width-sm;
+  }
 }
 </style>

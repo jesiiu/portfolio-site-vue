@@ -19,11 +19,17 @@ import {
   ViFileTypeScss2,
   ViFileTypeJsOfficial,
   ViFileTypeCsharp2,
-  ViFileTypePython,
+  CoPython,
   CoLaravel,
   ViFileTypePgsql,
   SiMicrosoftsqlserver,
-  ViFileTypeNginx
+  ViFileTypeNginx,
+  FcDebian,
+  SiFastapi,
+  ViFileTypeXml,
+  ViFileTypeApache,
+  FcLinux,
+  ViFileTypePhp
 } from 'oh-vue-icons/icons'
 
 addIcons(
@@ -43,11 +49,17 @@ addIcons(
   ViFileTypeScss2,
   ViFileTypeJsOfficial,
   ViFileTypeCsharp2,
-  ViFileTypePython,
+  CoPython,
   CoLaravel,
   ViFileTypePgsql,
   SiMicrosoftsqlserver,
-  ViFileTypeNginx
+  ViFileTypeNginx,
+  FcDebian,
+  SiFastapi,
+  ViFileTypeXml,
+  ViFileTypeApache,
+  FcLinux,
+  ViFileTypePhp
 )
 
 const app = createApp(App)

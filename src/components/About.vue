@@ -29,17 +29,8 @@
 </template>
 <style lang="scss">
 @import '../assets/scss/variables.scss';
-section {
+#about {
   height: 100vh;
-
-  h5 {
-    color: $color-white;
-    text-align: center;
-  }
-  h2 {
-    color: $color-light;
-    text-align: center;
-  }
 }
 
 .about__container {
@@ -97,6 +88,29 @@ section {
 
   p {
     color: $color-white;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about__container {
+    gap: 6%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #about {
+    height: max-content;
+  }
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: $container-width-sm;
   }
 }
 </style>
