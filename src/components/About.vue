@@ -108,9 +108,18 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .container {
-    width: $container-width-sm;
+@media screen and (max-width: 662px) {
+  .about__me{
+    display: flex;
+    justify-content: center;
+  }
+  .about__me-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .about__me-image {
+  border-radius: 20px;
+  transform: rotate(0deg);
   }
 }
 </style>

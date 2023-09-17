@@ -86,6 +86,30 @@ header {
   right: -2.3rem;
   color: $color-primary;
 }
+
+@media screen and (max-width: 1200px) {
+  .about__container {
+    gap: 6%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #about {
+    height: max-content;
+  }
+  .about__container {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 662px) {
+  .about__me-cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
 </style>
 
 <script>

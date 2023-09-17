@@ -92,6 +92,51 @@
     font-size: 1.1rem;
   }
 }
+@media screen and (max-width: 1430px) {
+  .experience__container {
+    grid-template-columns: none;
+    width: 50% !important;
+  }
+  .experience__detail {
+    &:nth-child(even) {
+      justify-content: flex-end;
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .experience__container {
+    width: 75% !important;
+  }
+  .experience__detail {
+    small {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 727px) {
+  .experience__container {
+    width: 95% !important;
+  }
+}
+@media screen and (max-width: 570px) {
+  .experience__detail {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 520px) {
+  .experience__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .experience__detail {
+    justify-content: center;
+    &:nth-child(even) {
+      justify-content: center;
+    }
+  }
+}
 </style>
 
 <script>

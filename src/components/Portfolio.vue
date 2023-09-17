@@ -8,8 +8,12 @@
         <div class="portfolio__card" v-for="(item, index) in projects" :key="index">
           <img :src="item.img" :alt="item.alt" />
           <div class="portfolio__card-description">
-            <h4>{{ item.title }}</h4>
+            <h1>{{ item.title }}</h1>
             <p>{{ item.description }}</p>
+            <div class="portfolio__card-techstack">
+              <router-link :to="item.github"><v-icon name="bi-github" /></router-link>
+              <small>{{  item.stack }}</small>
+            </div>
           </div>
         </div>
       </div>
@@ -26,10 +30,12 @@
 .portfolio__cards {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 100%;
 }
 .portfolio__card {
-  width: 100%;
+  width: 75%;
   overflow: hidden;
   position: relative;
   display: inline-block;
@@ -47,11 +53,17 @@
   position: absolute;
   top: 50px;
   left: 50px;
-  background: rgba(0, 0, 0, 0.562);
+  background: rgba(0, 0, 0, 0.603);
   width: calc(100% - 100px);
   height: calc(100% - 100px);
   padding: 1rem;
   border-radius: 5px;
+}
+.portfolio__card-techstack {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding-top: 2rem;
 }
 </style>
 <script>
@@ -61,10 +73,11 @@ export default {
       projects: [
         {
           img: 'src/assets/img/3.webp',
-          alt: 'Project 1',
-          title: 'Project 1',
-          description: '',
-          stack: ''
+          alt: 'OrdersHub',
+          title: 'OrdersHub',
+          description: 'Aplikacja agragująca zamówienia pobierane z różnych platform sprzedażowych, w tym z Baselinkera. Pozwala to na optymalizację czasu realizacji oraz wysyłki zamówienia dla wielu platform a to przekłada się na lepsze opinie sklepu oraz zwiększenie sprzedaży. Aplikacja pozwala na podpięcie kilku magazynów które zamówienia mogą obsługiwać, zarezerwować zamówienie przez wybrany magazyn, tworzyć dokument sprzedażowy, pobrać etykietę wysyłkową dla zamówienia oraz zmienić status na platformie.',
+          github: '',
+          stack: 'LARAVEL RESTAPI PGSQL'
         },
         {
           img: 'src/assets/img/3.webp',
