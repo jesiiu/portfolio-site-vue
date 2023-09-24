@@ -15,7 +15,7 @@
         </a>
       </div>
       <div class="header__me">
-        <img :src="imageUrl" alt="Picture" />
+        <img :src="imageUrl" alt="Picture" class="header__me-picture"/>
       </div>
       <a href="#" class="header__scroll-down">Scroll down</a>
     </div>
@@ -108,6 +108,13 @@ header {
   .about__me-cards {
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 662px) {
+  .header__me{
+    width: 16rem;
+    height: 33rem;
+    left: calc(50% - 8rem);
   }
 }
 </style>

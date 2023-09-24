@@ -83,10 +83,15 @@
 }
 .about__me-description {
   width: 100%;
-  height: max-contents;
-  padding: 1.5rem 1.5rem 1.5rem 0;
+  height: max-content;
+  padding: 0.5rem;
+  border: 1px solid $color-light;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
 
   p {
+    padding: 0.8rem;
     color: $color-white;
   }
 }
