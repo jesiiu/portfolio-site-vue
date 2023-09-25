@@ -2,7 +2,7 @@
 
 <template>
   <section id="contact">
-    <h5>Zostańsmy w kontakcie</h5>
+    <h5>Zostańmy w kontakcie</h5>
     <h2>Napisz do mnie</h2>
     <div class="container contact__container">
       <div class="contact__options">
