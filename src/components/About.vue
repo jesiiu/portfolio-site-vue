@@ -155,8 +155,8 @@ export default {
       ],
       description:
         'W lipcu 2023 roku ukończyłem studia na Uniwersytecie Merito w Poznaniu, zdobywając tytuł inżyniera Informatyki w specjalizacji e-commerce.  ' +
-        "Obecnie zawodowo specjalizuję się w tworzeniu aplikacji backend'owych w językach C#, Python pozwalających na automatyzację oraz optymalizację procesów biznesowych." +
-        "Jestem równiez zaznajomiony w tworzeniu aplikacji fullstack'owych do których wykorzystałem framework Laravel języka PHP oraz framework Vue do stworzenia frontend'u aplikacji. "
+        "Obecnie zawodowo specjalizuję się w tworzeniu aplikacji backend'owych w językach C#, Python pozwalających na automatyzację oraz optymalizację procesów biznesowych. " +
+        "Jestem równiez zaznajomiony w tworzeniu aplikacji fullstack'owych, do których wykorzystałem framework Laravel języka PHP oraz framework Vue do stworzenia frontend'u aplikacji. "
     }
   }
 }

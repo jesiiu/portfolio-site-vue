@@ -16,9 +16,9 @@
         </article>
       </div>
       <form ref="form" @submit.prevent="sendEmail">
-        <input type="text" name="name" placeholder="Your name...." required />
-        <input type="text" name="email" placeholder="Your email..." required />
-        <textarea name="message" rows="7" placeholder="Your message..." required></textarea>
+        <input type="text" name="name" placeholder="Twoje imie..." required />
+        <input type="text" name="email" placeholder="Twój email..." required />
+        <textarea name="message" rows="7" placeholder="Napisz wiadomość..." required></textarea>
         <button type="submit" class="btn btn-primary">
           <v-icon v-if="isSending" name="pr-spinner" animation="spin" />
           <span v-else>Send message</span>
