@@ -124,7 +124,7 @@ header {
 export default {
   data() {
     return {
-      imageUrl: './src/assets/img/main-image.webp',
+      imageUrl: './assets/img/main-image.webp',
       socials: [
         {
           icon: 'bi-linkedin',
@@ -144,7 +144,7 @@ export default {
   methods: {
     downloadCV() {
       const link = document.createElement('a')
-      link.href = './src/assets/files/kacper_jess_CV.pdf'
+      link.href = './assets/files/kacper_jess_CV.pdf'
       link.download = 'Kacper_Jess_CV.pdf'
       link.click()
     }

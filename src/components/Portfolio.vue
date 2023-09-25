@@ -177,7 +177,7 @@ export default {
     return {
       projects: [
         {
-          img: './src/assets/img/portfiolo-image-first.webp',
+          img: './assets/img/portfiolo-image-first.webp',
           alt: 'OrdersHub',
           title: 'OrdersHub',
           description:
@@ -199,7 +199,7 @@ export default {
           ]
         },
         {
-          img: './src/assets/img/portfolio-image-second.webp',
+          img: './assets/img/portfolio-image-second.webp',
           alt: 'Integracje ERP',
           title: 'Integracje ERP',
           description:
@@ -223,7 +223,7 @@ export default {
           ]
         },
         {
-          img: './src/assets/img/portfiolio-image-third.webp',
+          img: './assets/img/portfiolio-image-third.webp',
           alt: 'Mniejsze projekty',
           title: 'Mniejsze projekty',
           description:

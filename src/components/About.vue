@@ -135,7 +135,7 @@
 export default {
   data() {
     return {
-      imageUrl: './src/assets/img/second-image.webp',
+      imageUrl: './assets/img/second-image.webp',
       cards: [
         {
           icon: 'bi-clipboard-data-fill',
