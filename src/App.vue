@@ -4,6 +4,8 @@ import About from './components/About.vue'
 import Nav from './components/Nav.vue'
 import Experience from './components/Experience.vue'
 import Portfolio from './components/Portfolio.vue'
+import Contact from './components/Contact.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
@@ -12,6 +14,8 @@ import Portfolio from './components/Portfolio.vue'
   <Nav />
   <Experience />
   <Portfolio />
+  <Contact />
+  <Footer />
 </template>
 
 <style lang="scss">
@@ -41,6 +45,7 @@ body {
   background: $color-bg;
   color: $color-white;
   line-height: 1.7;
+  width: 100%;
 }
 
 h1,

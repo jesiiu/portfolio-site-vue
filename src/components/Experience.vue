@@ -6,7 +6,7 @@
     <h2>Moje umiejętności</h2>
     <div class="container experience__container">
       <div class="experience__frontend">
-        <h3 class="experience__frontend-title">Frontend Stack</h3>
+        <h3 class="experience__frontend-title experience__title">Frontend Stack</h3>
         <div class="experience__content">
           <article class="experience__detail" v-for="(item, index) in frontendItems" :key="index">
             <v-icon :name="item.icon" scale="3" />
@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="experience__backend">
-        <h3 class="experience__backend-title">Backend Stack</h3>
+        <h3 class="experience__backend-title experience__title">Backend Stack</h3>
         <div class="experience__content">
           <article class="experience__detail" v-for="(item, index) in backendItems" :key="index">
             <v-icon :name="item.icon" scale="3" />
@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="experience__database">
-        <h3 class="experience__database-title">Database</h3>
+        <h3 class="experience__database-title experience__title">Database</h3>
         <div class="experience__content">
           <article class="experience__detail" v-for="(item, index) in databaseItems" :key="index">
             <v-icon :name="item.icon" scale="3" />
@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="experience__server">
-        <h3 class="experience__server-title">Servers</h3>
+        <h3 class="experience__server-title experience__title">Servers</h3>
         <div class="experience__content">
           <article class="experience__detail" v-for="(item, index) in serverItems" :key="index">
             <v-icon :name="item.icon" scale="3" />
@@ -56,10 +56,7 @@
   gap: 2rem;
   grid-template-columns: 1fr 1fr;
 }
-.experience__frontend-title,
-.experience__backend-title,
-.experience__database-title,
-.experience__server-title {
+.experience__title {
   text-align: center;
   font-size: 1.8rem;
 }
@@ -121,6 +118,10 @@
   }
 }
 @media screen and (max-width: 570px) {
+  .experience__title {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+  }
   .experience__detail {
     padding: 0;
   }

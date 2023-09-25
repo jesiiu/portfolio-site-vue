@@ -6,8 +6,8 @@
       <h2>Kacper Jess</h2>
       <h5 class="text-light">Junior Developer</h5>
       <div class="header__cta">
-        <a class="btn">Moje CV</a>
-        <a href="#" class="btn btn-primary">Porozmawiajmy</a>
+        <a class="btn" :onclick="downloadCV">Moje CV</a>
+        <a href="#contact" class="btn btn-primary">Porozmawiajmy</a>
       </div>
       <div class="header__socials">
         <a v-for="(socialItem, index) in socials" :key="index" :href="socialItem.link">
@@ -15,7 +15,7 @@
         </a>
       </div>
       <div class="header__me">
-        <img :src="imageUrl" alt="Picture" class="header__me-picture"/>
+        <img :src="imageUrl" alt="Picture" class="header__me-picture" />
       </div>
       <a href="#" class="header__scroll-down">Scroll down</a>
     </div>
@@ -105,13 +105,14 @@ header {
 }
 
 @media screen and (max-width: 662px) {
+  header {
+    margin-bottom: 5rem;
+  }
   .about__me-cards {
     display: flex;
     flex-direction: column;
   }
-}
-@media screen and (max-width: 662px) {
-  .header__me{
+  .header__me {
     width: 16rem;
     height: 33rem;
     left: calc(50% - 8rem);
@@ -123,21 +124,29 @@ header {
 export default {
   data() {
     return {
-      imageUrl: 'src/assets/img/1.webp',
-      socials : [
+      imageUrl: 'src/assets/img/main-image.webp',
+      socials: [
         {
-          icon: "bi-linkedin",
-          link: ""
+          icon: 'bi-linkedin',
+          link: 'https://www.linkedin.com/in/kacper-jess-27b835225/'
         },
         {
-          icon: "bi-github",
-          link: ""
+          icon: 'bi-github',
+          link: 'https://www.github.com/jesiiu'
         },
         {
-          icon: "fa-facebook-messenger",
-          link: ""
-        },
+          icon: 'fa-facebook-messenger',
+          link: 'https://m.me/kacper.jess.7'
+        }
       ]
+    }
+  },
+  methods: {
+    downloadCV() {
+      const link = document.createElement('a')
+      link.href = './src/assets/files/kacper_jess_CV.pdf'
+      link.download = 'Kacper_Jess_CV.pdf'
+      link.click()
     }
   }
 }

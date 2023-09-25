@@ -93,6 +93,8 @@
   p {
     padding: 0.8rem;
     color: $color-white;
+    font-size: 1rem;
+    font-weight: 500;
   }
 }
 
@@ -133,7 +135,7 @@
 export default {
   data() {
     return {
-      imageUrl: 'src/assets/img/2.webp',
+      imageUrl: 'src/assets/img/second-image.webp',
       cards: [
         {
           icon: 'bi-clipboard-data-fill',

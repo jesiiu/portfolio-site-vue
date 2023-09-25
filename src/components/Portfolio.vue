@@ -51,6 +51,7 @@
     padding: 2rem;
     aspect-ratio: 1/1;
     border-radius: 3.5rem;
+    transition: $transition;
   }
 }
 .portfolio__card-description {
@@ -112,7 +113,23 @@
   }
 }
 @media screen and (max-width: 640px) {
+  .portfolio__container {
+    width: 98% !important;
+  }
+  .portfolio__cards {
+    width: 100%;
+  }
+  .portfolio__card {
+    img {
+      padding: 1rem;
+    }
+  }
   .portfolio__card-description {
+    top: 30px;
+    left: 30px;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    padding: 1rem;
     h1 {
       font-size: 1.2rem;
     }
@@ -139,7 +156,7 @@
     }
   }
 }
-@media screen and (max-width: 527px) {
+@media screen and (max-width: 400px) {
   .portfolio__card-description {
     h1 {
       font-size: 1rem;
@@ -149,7 +166,7 @@
     }
     small {
       font-weight: 500;
-      font-size: 0.5rem;
+      font-size: 0.6rem;
     }
   }
 }
@@ -160,7 +177,7 @@ export default {
     return {
       projects: [
         {
-          img: 'src/assets/img/3.webp',
+          img: 'src/assets/img/portfiolo-image-first.webp',
           alt: 'OrdersHub',
           title: 'OrdersHub',
           description:
@@ -177,56 +194,58 @@ export default {
               name: 'RestAPI'
             },
             {
-              name: "HTML/CSS/JS"
+              name: 'HTML/CSS/JS'
             }
           ]
         },
         {
-          img: 'src/assets/img/4.webp',
+          img: 'src/assets/img/portfolio-image-second.webp',
           alt: 'Integracje ERP',
           title: 'Integracje ERP',
-          description: 'Aplikacje przeznaczone do wymiany danych o produktach wraz z opisami, znajdujących się w systemie ERP, z platformami e-commerce w celu możliwości wystawienia aukcji sprzedażowych, aktualizacji cen oraz stanu magazynowego. Komunikacja odbywa się poprzez pobranie danych z bazy danych MSSQL lub PGSQL a następnie wysłanie ich przy użyciu dostarczonego przez target docelowy interfejsu API, ewentualnie poprzez plik JSON/XML/CSV. ',
+          description:
+            'Aplikacje przeznaczone do wymiany danych o produktach wraz z opisami, znajdujących się w systemie ERP, z platformami e-commerce w celu możliwości wystawienia aukcji sprzedażowych, aktualizacji cen oraz stanu magazynowego. Komunikacja odbywa się poprzez pobranie danych z bazy danych MSSQL lub PGSQL a następnie wysłanie ich przy użyciu dostarczonego przez target docelowy interfejsu API, ewentualnie poprzez plik JSON/XML/CSV. ',
           stack: [
             {
-              name: "C#"
+              name: 'C#'
             },
             {
-              name: "Python"
+              name: 'Python'
             },
             {
-              name: "MSSQL"
+              name: 'MSSQL'
             },
             {
-              name: "PGSQL"
+              name: 'PGSQL'
             },
             {
-              name: "REST/SOAP API"
+              name: 'REST/SOAP API'
             }
           ]
         },
         {
-          img: 'src/assets/img/5.webp',
+          img: 'src/assets/img/portfiolio-image-third.webp',
           alt: 'Mniejsze projekty',
           title: 'Mniejsze projekty',
-          description: 'Aplikacje optymalizujące procesy biznesowe oraz ułatwiające pracę pracownikom firmy. Ich działanie skupione jest na zmniejszeniu ilości wymaganych kroków do wykonania danego działania, eliminowanie powtarzania zbędnych czynności, docelowo pozwalające na większą automatyzację a co za tym idzie zwiększa się efektywnośc pracy.',
+          description:
+            'Aplikacje optymalizujące procesy biznesowe oraz ułatwiające pracę pracownikom firmy. Ich działanie skupione jest na zmniejszeniu ilości wymaganych kroków do wykonania danego działania, eliminowanie powtarzania zbędnych czynności, docelowo pozwalające na większą automatyzację a co za tym idzie zwiększa się efektywnośc pracy.',
           stack: [
             {
-              name: "C#"
+              name: 'C#'
             },
             {
-              name: "Python"
+              name: 'Python'
             },
             {
-              name: "MSSQL"
+              name: 'MSSQL'
             },
             {
-              name: "PGSQL"
+              name: 'PGSQL'
             },
             {
-              name: "PHP"
+              name: 'PHP'
             },
             {
-              name: "JSON/XML"
+              name: 'JSON/XML'
             }
           ]
         }

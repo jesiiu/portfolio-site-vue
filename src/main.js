@@ -29,7 +29,10 @@ import {
   ViFileTypeXml,
   ViFileTypeApache,
   FcLinux,
-  ViFileTypePhp
+  ViFileTypePhp,
+  MdEmail,
+  RiWhatsappFill,
+  PrSpinner
 } from 'oh-vue-icons/icons'
 
 addIcons(
@@ -59,7 +62,10 @@ addIcons(
   ViFileTypeXml,
   ViFileTypeApache,
   FcLinux,
-  ViFileTypePhp
+  ViFileTypePhp,
+  MdEmail,
+  RiWhatsappFill,
+  PrSpinner
 )
 
 const app = createApp(App)
