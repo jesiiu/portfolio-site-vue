@@ -124,7 +124,7 @@ header {
 export default {
   data() {
     return {
-      imageUrl: 'src/assets/img/main-image.webp',
+      imageUrl: './src/assets/img/main-image.webp',
       socials: [
         {
           icon: 'bi-linkedin',
