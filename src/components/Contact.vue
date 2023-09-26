@@ -41,7 +41,7 @@
   gap: 1.2rem;
 }
 .contact__option {
-  background: $color-bg-variant;
+  background: $color-primary;
   border: 1px solid transparent;
   border-radius: 1.2rem;
   padding: 1.2rem;

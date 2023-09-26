@@ -22,7 +22,7 @@
             {{ description }}
           </p>
         </div>
-        <a href="#" class="btn btn-primary">Porozmawiajmy</a>
+        <a href="#contact" class="btn btn-primary">Porozmawiajmy</a>
       </div>
     </div>
   </section>
