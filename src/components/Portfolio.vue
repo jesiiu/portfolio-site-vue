@@ -177,12 +177,37 @@ export default {
     return {
       projects: [
         {
+          img: './assets/img/portfiolo-image.webp',
+          alt: 'Chatbot AI/ML',
+          title: 'Chatbot AI/ML',
+          description:
+            'Projekt utworzony na potrzeby projektu dyplomowego - pracy inżynierskiej. Model SI Chatbota został dostarczony przez bibliotekę PyTorch, która została odpowiednio skonfigurowana pod wymagania projektu. Model był uczony poprzez nadzorowane uczenie maszynowe zbiorem treningowym, który zawierał zestaw pytań oraz odpowiedzi w zależności od intencji. Chatbot został umieszczony na serwerze zdalnym w postaci aplikacji która posiadała endpoint REST API, pozwalający na przesłanie zapytania użytkownika i uzyskania odpowedzi od Chatbota.',
+          github: 'https://github.com/jesiiu/chatbot-thesis',
+          stack: [
+            {
+              name: 'Python'
+            },
+            {
+              name: 'PyTorch/Flask'
+            },
+            {
+              name: 'NGINX'
+            },
+            {
+              name: 'SQLite'
+            },
+            {
+              name: 'REST API'
+            }
+          ]
+        },
+        {
           img: './assets/img/portfiolo-image-first.webp',
           alt: 'OrdersHub',
           title: 'OrdersHub',
           description:
             'Aplikacja agregująca zamówienia pobierane z różnych platform sprzedażowych, w tym z Baselinkera. Pozwala to na optymalizację czasu realizacji zamówienia dla wielu platform co z kolei przekłada się na lepsze opinie oraz zwiększenie sprzedaży. Aplikacja umożliwia podpięcie kilku magazynów które zamówienia mogą obsługiwać, zarezerwować zamówienie przez wybrany magazyn, tworzyć dokument sprzedażowy, pobrać etykietę wysyłkową dla zamówienia oraz zmienić status na platformie.',
-          github: '',
+          github: 'https://github.com/jesiiu',
           stack: [
             {
               name: 'Laravel'
@@ -204,6 +229,7 @@ export default {
           title: 'Integracje ERP',
           description:
             'Aplikacje przeznaczone do wymiany danych o produktach wraz z opisami, znajdujących się w systemie ERP, z platformami e-commerce w celu możliwości wystawienia aukcji sprzedażowych, aktualizacji cen oraz stanu magazynowego. Komunikacja odbywa się poprzez pobranie danych z bazy danych MSSQL lub PGSQL a następnie wysłanie ich przy użyciu dostarczonego przez target docelowy interfejsu API, ewentualnie poprzez plik JSON/XML/CSV. ',
+          github: 'https://github.com/jesiiu',
           stack: [
             {
               name: 'C#'
@@ -228,6 +254,7 @@ export default {
           title: 'Mniejsze projekty',
           description:
             'Aplikacje optymalizujące procesy biznesowe oraz ułatwiające pracę pracownikom firmy. Ich działanie skupione jest na zmniejszeniu ilości wymaganych kroków do wykonania danego działania, eliminowanie powtarzania zbędnych czynności, docelowo pozwalające na większą automatyzację a co za tym idzie zwiększa się efektywnośc pracy.',
+          github: 'https://github.com/jesiiu',
           stack: [
             {
               name: 'C#'
