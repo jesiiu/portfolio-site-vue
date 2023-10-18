@@ -177,7 +177,7 @@ export default {
     return {
       projects: [
         {
-          img: './assets/img/portfiolo-image.webp',
+          img: './assets/img/portfolio-image.webp',
           alt: 'Chatbot AI/ML',
           title: 'Chatbot AI/ML',
           description:
